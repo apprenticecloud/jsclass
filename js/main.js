@@ -37,7 +37,8 @@ function getFormInput(){
 
         //Display Akan Name
         console.log(akanName)
-
+        
+        //Display Akan name on the UI using a bootstrap alert
         document.getElementById('displayName').innerHTML ='<div class="alert alert-primary" role="alert"> Congratulations!!! <br> Your Akan Name is: <span class="text-danger">'+akanName+'</span> you are a <span class="text-danger">'+gender+'</span> born on a <span class="text-danger">'+dayName+'</span> </div>'
 
 
