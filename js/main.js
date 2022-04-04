@@ -4,7 +4,7 @@ function getFormInput(){
     const female = document.getElementById("femaleRadio");
     var dayIndex = new Date(date).getDay();
 
-        //This one evaluates for the day of the week based on the day index
+        //This code block  evaluates for the day of the week based on the day index
         const getDayName = (dayIndex) =>{
             const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
             return days[dayIndex];
@@ -23,7 +23,9 @@ function getFormInput(){
             return names[dayIndex];
         }
 
-
+        /*
+        *This block of code evaluates for the gender supplied by the user and assighns an Akan name based on the gender
+        */
         if(male.checked){
             var gender = 'Male'
             var akanName = getMaleAkanName(dayIndex)
